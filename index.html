@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Trivias Double G - Gercia & Gladys</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+  </head>
+  <body>
+    <header>
+        <img class="logo" src="img/logo-trivia.png">
+    </header>
+
+<!-- Pantalla de bienvenida. -->
+    <div class="block1" id="inicio" style="">
+        <h1>¡Bienvenido a la Trivia!</h1>
+        <p>¿Cuál es tu nombre?</p>
+        <input class="sendname" type="text" id="nombre"
+          placeholder="Ingresa tu nombre aquí"/>
+        <button type="button" id="btn_Enviar">Enviar</button>
+    </div>
+
+<!-- Pantalla de elegir temas. -->
+    <div class="block2" id="saludo" style="display:none;">
+      <h2 id="nombreJugador"> Hola </h2>
+      <p>Prueba tus conocimientos sobre cines o libros. Acontinuación, elige el tema de la trivia que prefieras.</p>
+      <button type="button" id="btn_Peliculas">Trivia Cinefilo</button>
+      <button class="btn_2" type="button" id="btn_Libros">Trivia Lector</button>
+    </div>
+
+
+<!-- Pantalla de preguntas tema 1 -->
+    <div class="block3" id="peliculasPregunta1" style="display:none;">
+      <h2>¿Crees que sabes todo sobre Cine?</h2>
+      <p>Descubre que tanto sabes de cine, responde las siguentes preguntas.</p>
+      <hr>
+      <div class="question-container">
+        <div class="question_P1">
+          <img src="img/pelicula_p1.jpg" alt="">
+          <h3>¿Quién canta la banda sonora de Titanic?</h3>
+          <button type="button" id="PeliculaP1_1">Rihanna</button>
+          <button type="button" id="PeliculaP1_2">Celine Dion</button>
+          <button type="button" id="PeliculaP1_3">Bruno Mars</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="block3" id="peliculasPregunta2" style="display:none;">
+      <h2>¿Crees que sabes todo sobre Cine?</h2>
+      <p>Descubre que tanto sabes de cine, responde las siguentes preguntas.</p>
+      <hr>
+      <div class="question-container">
+        <div class="question_P1">
+          <img src="img/pelicula_p2.jpg" alt="">
+          <h3>¿Cuál es el nombre del dueño de Woody en la película Toy Story?</h3>
+          <button type="button" id="PeliculaP2_1">Dany</button>
+          <button type="button" id="PeliculaP2_2">Tony</button>
+          <button type="button" id="PeliculaP2_3">Andy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="block3" id="peliculasPregunta3" style="display:none;">
+      <h2>¿Crees que sabes todo sobre Cine?</h2>
+      <p>Descubre que tanto sabes de cine, responde las siguentes preguntas.</p>
+      <hr>
+      <div class="question-container">
+        <div class="question_P1">
+          <img src="img/pelicula_p3.jpg" alt="">
+          <h3>¿Qué super héroe muere para salvar a la humanidad en la película Advengers End Game?</h3>
+          <button type="button" id="PeliculaP3_1">Capitán América</button>
+          <button type="button" id="PeliculaP3_2">Iron Man</button>
+          <button type="button" id="PeliculaP3_3">Black widow</button>
+        </div>
+      </div>
+    </div>
+
+<!-- Pantalla de preguntas tema 2 -->
+    <div class="block3" id="librosPregunta1" style="display:none;">
+      <h2>¿Crees que sabes todo sobre libros?</h2>
+      <p>Descubre que tanto sabes de libros, responde las siguentes preguntas.</p>
+      <hr>
+      <div class="question-container">
+        <div class="question_P2">
+          <img src="img/libro_p1.jpg" alt="">
+          <h3>¿Quién escribió La Divina Comedia?</h3>
+          <button class="btn_2" type="button" id="LibrosP1_1">Arthur Conan Doyle</button>
+          <button class="btn_2" type="button" id="LibrosP1_2">Agatha Christie</button>
+          <button class="btn_2" type="button" id="LibrosP1_3">Dante Alighieri</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="block3" id="librosPregunta2" style="display:none;">
+      <h2>¿Crees que sabes todo sobre libros?</h2>
+      <p>Descubre que tanto sabes de libros, responde las siguentes preguntas.</p>
+      <hr>
+      <div class="question-container">
+        <div class="question_P2">
+          <img src="img/libro_p2.jpg" alt="">
+          <h3>Orgullo y Prejuicio fue escrita por:</h3>
+          <button class="btn_2" type="button" id="LibrosP2_1">Jane Austen</button>
+          <button class="btn_2" type="button" id="LibrosP2_2">Alejandro Dumas</button>
+          <button class="btn_2" type="button" id="LibrosP2_3">Agatha Christie</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="block3" id="librosPregunta3" style="display:none;">
+      <h2>¿Crees que sabes todo sobre libros?</h2>
+      <p>Descubre que tanto sabes de libros, responde las siguentes preguntas.</p>
+      <hr>
+      <div class="question-container">
+        <div class="question_P2">
+          <img src="img/libro_p3.jpg" alt="">
+          <h3>¿Quién es el autor de el libro La Metamorfosis?</h3>
+          <button class="btn_2" type="button" id="LibrosP3_1">Arthur Conan Doyle</button>
+          <button class="btn_2" type="button" id="LibrosP3_2">León Tolstoi</button>
+          <button class="btn_2" type="button" id="LibrosP3_3">Franz Kafka</button>
+        </div>
+      </div>
+    </div>
+
+<!-- Pantalla de elegir temas. -->
+    <div class="block2" id="resultados" style="display:none;">
+      <h2>Resultados</h2>
+      <h3 id="puntos">¡Has acertado!</h3>
+          <button type="button"  id="btn_Inicio">Reiniciar</button>
+          <button class="btn_2" type="button"  id="btn_Temas">Elegir otro tema</button>
+    </div>
+
+    <footer><h4>Copyright © 2019 Developed by Gladys Dlc & Grecia Garcia. All Rights Reserved</h4></footer>
+
+<!-- LLamada JavaScript. -->
+  <script src="app.js" charset="utf-8"></script>
+
+  </body>
+</html>
