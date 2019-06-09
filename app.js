@@ -32,13 +32,7 @@ const LibrosP3_3 = document.getElementById('LibrosP3_3');
 
 let aciertos = 0;
 
-/*Evento para Enter
-function Enter(e) {
-    if (e.keyCode == 13) {
-    MostrarNombre();
-    }
-} */
-
+//Evento para Enter
 enter.addEventListener('keypress', (e) => {
   if (e.keyCode == 13) {
   
@@ -49,16 +43,6 @@ enter.addEventListener('keypress', (e) => {
     }
 });
 
-/*
- function MostrarNombre() {
-const nombre = nombreUsuario.value;
-
-  document.getElementById('nombreJugador').innerHTML = "¡Hola " + nombre + "!";
-  document.getElementById('inicio').style.display = "none"; // Oculta la seccion indicada
-  document.getElementById('saludo').style.display = "block"; // Muestra  la seccion indicda
-}
-*/
-
 //Mostrar Nombre
   btn_Enviar.addEventListener('click', () => {
   const nombre = nombreUsuario.value;
@@ -67,13 +51,6 @@ const nombre = nombreUsuario.value;
   document.getElementById('inicio').style.display = "none"; // Oculta la seccion indicada
   document.getElementById('saludo').style.display = "block"; // Muestra  la seccion indicda
 });
-
-/* Peliculas
-function MostrarPelicula(){
-  document.getElementById('saludo').style.display = "none";
-  document.getElementById('peliculasPregunta1').style.display = "block";
-}
-*/
 
 //Peliculas
 btn_Peliculas.addEventListener('click', () => {
@@ -151,13 +128,6 @@ function SumarPeliculaP3(respuesta){
   document.getElementById('resultados').style.display = "block";
   MostrarResultados();
 }
-
-/*Libros
-function MostrarLibros(){
-  document.getElementById('saludo').style.display = "none";
-  document.getElementById('librosPregunta1').style.display = "block";
-}
-*/
 
 //Libros
 btn_Libros.addEventListener('click', () => {
@@ -237,13 +207,6 @@ function SumarLibrosP3(respuesta){
 }
 
 //Volver a Temas
-/*function MostrarTemas() {
-  aciertos = 0;
-  document.getElementById('resultados').style.display = "none";
-  document.getElementById('saludo').style.display = "block";
-}
-*/
-
 btn_Temas.addEventListener('click', () => {
   aciertos = 0;
   document.getElementById('resultados').style.display = "none";
@@ -251,14 +214,6 @@ btn_Temas.addEventListener('click', () => {
 });
 
 //Volver a Inicio
-/*function MostrarInicio() {
-  nombreUsuario.value = "";
-  aciertos = 0;
-  document.getElementById('resultados').style.display = "none";
-  document.getElementById('inicio').style.display = "block";
-}
-*/
-
 btn_Inicio.addEventListener('click', () => {
   nombreUsuario.value = "";
   aciertos = 0;
